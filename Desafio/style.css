@@ -1,0 +1,150 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;       
+}
+
+p {
+    padding-left: 250px;
+    padding-right: 240px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.datas h2 {
+    padding-bottom: 40px;
+}
+
+ ul {
+    padding-left: 270px;
+    padding-right: 240px;
+}
+
+.modalidades img {
+    width: 50%;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.cabeçalho {
+    display: flex;
+}
+
+.cabeçalho img {
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.datas img {
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+footer  {
+    background-color: #ebeef1;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+.n_pd p {
+    padding-top: 30px
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    transition: background 0.2s linear;
+}
+
+body .dark {
+    background: #292c35;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 40px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+    
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.checkbox:checked {
+    background-color: #111;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.botão .img {
+    display: flexbox;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    ul {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
